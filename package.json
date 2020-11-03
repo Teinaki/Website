@@ -1,0 +1,24 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Teinaki/Website.git"
+  },
+  "author": "Teinaki",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Teinaki/Website/issues"
+  },
+  "homepage": "https://github.com/Teinaki/Website#readme",
+  "description": "",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1"
+  }
+}
