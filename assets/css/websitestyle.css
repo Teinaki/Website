@@ -64,6 +64,7 @@
         color: deeppink;
         font-weight: 600;
         margin-bottom: 7rem;
+        content: "\"";
     }
     .flexbox-info{
         border-color: deeppink;
@@ -207,4 +208,7 @@
         color: black;
         margin-left: auto;
         text-decoration: none;
+    }
+    .body-repeat{
+        
     }
