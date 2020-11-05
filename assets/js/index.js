@@ -9,8 +9,8 @@ let listbox = [
     {"name"  : "box1",
     "picture" : "exmilitary.jpg",
     "picture_alt" : "Death grips album art exmilitary",
-    "main" : "Experimental music is a general label for any music that pushes existing boundaries and genre definitions. Experimental compositional practice is defined broadly by exploratory sensibilities radically opposed to, and questioning of, institutionalized compositional, performing, and aesthetic conventions in music. Elements of experimental music include indeterminate music, in which the composer introduces the elements of chance or unpredictability with regard to either the composition or its \performance. Artists may also approach a hybrid of disparate styles or incorporate unorthodox and unique elements.",
-    "smalldetail" : "Sales figures , reviews",
+    "main" : "Landing Pages designed with your conversion goals in mind",
+    "smalldetail" : "560,000 Sales , reviews",
     "bottom_info" : "Highlights:",
     "link_url" : "info.html",
     "link_text" : "More Information"

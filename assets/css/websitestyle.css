@@ -223,7 +223,6 @@
         margin-top: 8rem;
         margin-bottom: 10rem;
         align-items: center;
-        display: flex;
     }
     .sale-container{
         box-sizing: border-box;
@@ -271,4 +270,47 @@
         margin-bottom: 0.5rem;
         font-size: 32px;
         line-height: 1em;
+    }
+    .sale-form-container{
+        box-sizing: border-box;
+        padding-right: 1.5rem;
+        padding-left: 1rem;
+    }
+    .sale-form-item{
+        display: flex;
+        margin-bottom: 4rem;
+        align-items: center;
+    }
+    .sale-form-label{
+        width: 30%;
+        max-width: 26rem;
+        padding-right: 2rem;
+        box-sizing: border-box;
+    }
+    .sale-input{
+        border-style: none none solid
+    }
+    .sale-field{
+        box-sizing: border-box;
+        width: 70%;
+    }
+    .sale-field-note{
+        opacity: 0.5;
+    }
+    .field-container{
+        display: flex;
+        padding-bottom: 40px;
+    }
+    .field-container label{
+        box-sizing: border-box;
+    }
+    .sale-textarea{
+        resize: vertical;
+        min-height: 12rem;
+        width: 100%;
+        border-width: 2px;
+        box-sizing: border-box;
+    }
+    .sale-form{
+        font-size: 30px;
     }
