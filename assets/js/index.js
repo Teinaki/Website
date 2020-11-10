@@ -11,6 +11,7 @@ let listbox = [
     "picture_alt" : "Death grips album art exmilitary",
     "main" : "Landing Pages designed with your conversion goals in mind",
     "smalldetail" : "560,000 Sales , reviews",
+    "second-detail" : "something else",
     "bottom_info" : "Highlights:",
     "link_url" : "info.html",
     "link_text" : "More Information"
@@ -53,7 +54,7 @@ listbox.forEach((item,i) =>{
     let img_container = outertop.querySelector(".flexbox-infoNarrow");
     let img = img_container.querySelector("img");
 
-    img.src = "/assets/img/"+item.picture;
+    img.src = "img/"+item.picture;
     img.alt = item.picture_alt;
 
     let main_container = outertop.querySelector(".flexbox-infoWide");
