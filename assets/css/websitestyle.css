@@ -540,3 +540,15 @@
         text-transform: uppercase;
         color: black;
     }
+    .double-button-title{
+            margin-bottom: 3rem;
+            color: blue;
+            font-size: 32px;
+            font-weight: 600;
+    }
+    .double-buttons{
+        display: flex;
+    }
+    .double-button{
+        margin-right: 1rem;
+    }
