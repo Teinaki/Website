@@ -57,41 +57,41 @@
         font-size: 30px;
         text-align: center;
     }
-    .frame-box-infoTop{
+    .flexbox-infoTop{
         display: flex;
         padding-bottom: 6rem;
         flex-direction: row;
         justify-content: space-between;
     }
-    .frame-box-infoBottom{
+    .flexbox-infoBottom{
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
         align-items: flex-end;
     }
-    .frame-box-infoWide{
+    .flexbox-infoWide{
         display: flex;
         width: 100%;
         max-width: 46rem;
         padding-left: 5rem;
         flex-direction: column;
     }
-    .frame-box-infoNarrow{
+    .flexbox-infoNarrow{
         position: relative;
         width: 28rem;
         flex: 0 0 auto;
     }
-    .frame-box-textExplain{
+    .flexbox-textExplain{
         color: deeppink;
         font-weight: 600;
         margin-bottom: 7rem;
         content: "\"";
     }
-    .frame-box-info{
+    .flexbox-info{
         border-color: deeppink;
         color: deeppink;
     }
-    .frame-box-smallDetail{
+    .flexbox-smallDetail{
         border: 1px;
     }
     .linkylink{
@@ -380,16 +380,6 @@
         font-size: 24px;
         line-height: 1.5em;
     }
-    .frame-box-frame{
-        left: -4.2rem;
-        top: -3rem;
-        z-index: -1;
-        width: 28rem;
-        max-width: none;
-        position: absolute;
-        right: auto;
-        bottom: auto;
-    }
     .price-frame {
         left: -4.5rem;
         top: -5rem;
@@ -398,118 +388,6 @@
         position: absolute;
         right: auto;
         bottom: auto;
-    }
-    .small-squiggle{
-        max-width: 11rem;
-        margin-top: 1rem;
-        margin-bottom: 2rem;
-    }
-    .process-process-steps {
-        display: flex;
-        margin-top: 8rem;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        align-items: flex-start;
-    }
-    .process-process-step {
-        margin-bottom: 8rem;
-        padding-right: 0;
-        padding-left: 0;
-        flex: 33%;
-    }
-    .list-item {
-        position: relative;
-        float: left;
-        width: 33.33333333%;
-        min-height: 1px;
-    }
-    .process-process-step-text {
-        max-width: 19rem;
-    }
-    .process-process-final-step-text {
-        padding-right: 6rem;
-    }
-    .process-process-final-step-text, .process-process-step-text {
-        margin-bottom: 0;
-        font-size: 24px;
-        line-height: 1.5em;
-        font-family: Spacegrotesk,sans-serif;
-    }
-    .process-process-step-image {
-        left: -4rem;
-        top: -4.5rem;
-        width: 7rem;
-        opacity: .5;
-    }
-    .price-frame, .process-process-step-image {
-        position: absolute;
-        right: auto;
-        bottom: auto;
-    }
-    .process-process-final-step {
-    position: relative;
-        max-width: 66.66%;
-        margin-left: auto;
-    }
-    .process-process-step-image {
-        left: -4rem;
-        top: -4.5rem;
-        width: 7rem;
-        opacity: .5;
-    }
-    .price-frame, .process-process-step-image {
-        position: absolute;
-        right: auto;
-        bottom: auto;
-    }
-    .process-container {
-        position: relative;
-        z-index: 1;
-        max-width: 75rem;
-        padding-right: 1.5rem;
-        padding-left: 1rem;
-        width: 100%;
-        margin-right: auto;
-        margin-left: auto;
-    }
-    .exp-h2 {
-        font-weight: 700;
-    }
-    .exp-h2, .exp-h3 {
-        color: blue;
-        font-family: sans-serif;
-    }
-    .exp-h2 {
-        margin-bottom: 2rem;
-        margin-left: 0;
-        font-size: 144px;
-        line-height: 1.2em;
-    }
-    .exp-h3 {
-        margin-top: 0;
-        margin-bottom: 4rem;
-        font-size: 72px;
-        line-height: 1em;
-        font-weight: 500;
-    }
-    .process-click-show, .process-click-hide {
-        font-weight: 700;
-        text-transform: uppercase;
-        border-bottom: 2px dotted blue;
-        color: Blue;
-        font-size: 24px;
-        line-height: 1em;
-        letter-spacing: .1em;
-        cursor: pointer;
-    }
-    .drop-list-item{
-        position: relative;
-        float: left;
-        width: 33.33333333%;
-        min-height: 1px;
-    }
-    .brief-section{
-        margin-top: 10rem;
-        margin-bottom: 13rem;
+
     }
     
