@@ -28,6 +28,9 @@
         border: 0;
         display: inline-block;
     }
+    .absolute{
+        position: absolute;
+    }
     .flex {
         display: flex;
         align-items: center;
@@ -225,6 +228,14 @@
     }
     .nav-picture{
         font-size: 60px;
+        margin-left: 3px;
+    }
+    .nav-picture2{
+        position: absolute;
+        font-size: 60px;
+        color: #1c2e4a;
+        z-index: -1;
+        top: 9px;
     }
     .right-nav{
         color: black;
