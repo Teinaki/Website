@@ -275,7 +275,7 @@
         max-width: 26rem;
         color: #00f;
         font-size: 120px;
-        line-height: .83em;
+        line-height: .9em;
         font-weight: 600;
     }
     .sale-includes{
@@ -509,7 +509,44 @@
         min-height: 1px;
     }
     .brief-section{
+        position: relative;
         margin-top: 10rem;
         margin-bottom: 13rem;
     }
-    
+    .brief-container{
+        position: relative;
+        max-width: 75rem;
+        padding-right: 1.5rem;
+        padding-left: 1rem;
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .brief-frame-box{
+        display: flex;
+        max-width: 55rem;
+        margin-right: auto;
+        margin-left: auto;
+        align-items: center;
+    }
+    .brief-text {
+        max-width: 29rem;
+        margin-bottom: 3rem;
+        font-family: sans-serif;
+        color: blue;
+        font-size: 32px;
+        line-height: 1.2em;
+    }
+    .brief-frame-title{
+        position: relative;
+        max-width: 22rem;
+        margin-right: 7rem;
+    }
+    .brief-details{
+        max-width: 29rem;
+        margin-bottom: 3rem;
+        font-family: sans-serif;
+        color: Blue;
+        font-size: 32px;
+        line-height: 1.2em;
+    }
