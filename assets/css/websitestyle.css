@@ -35,12 +35,14 @@
         display: flex;
         align-items: center;
     }
-    .outer-container{
+    .default-container , .outer-container, .topbox-container, .sale-container, .process-container, .brief-container{
         position: relative;
         max-width: 75rem;
         width: 100%;
         margin-right: auto;
         margin-left: auto;
+    }
+    .outer-container{
         margin-bottom: 20rem;
     }
     .grid-container {
@@ -116,11 +118,6 @@
         flex-direction: column;
     }
     .topbox-container{
-        position: relative;
-        max-width: 75rem;
-        width: 100%;
-        margin-right: auto;
-        margin-left: auto;
         margin-top: 10rem;
         margin-bottom: 20rem;
     }
@@ -250,12 +247,8 @@
     }
     .sale-container{
         box-sizing: border-box;
-        max-width: 75rem;
         padding-right: 1.5rem;
         padding-left: 1rem;
-        position: relative;
-        margin-right: auto;
-        margin-left: auto;
         line-height: 1em;
     }
     .sale-price-frame{
@@ -463,14 +456,8 @@
         bottom: auto;
     }
     .process-container {
-        position: relative;
-        z-index: 1;
-        max-width: 75rem;
         padding-right: 1.5rem;
         padding-left: 1rem;
-        width: 100%;
-        margin-right: auto;
-        margin-left: auto;
     }
     .exp-h2 {
         font-weight: 700;
@@ -514,13 +501,8 @@
         margin-bottom: 13rem;
     }
     .brief-container{
-        position: relative;
-        max-width: 75rem;
         padding-right: 1.5rem;
         padding-left: 1rem;
-        width: 100%;
-        margin-right: auto;
-        margin-left: auto;
     }
     .brief-frame-box{
         display: flex;
