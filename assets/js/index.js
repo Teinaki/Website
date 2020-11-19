@@ -81,16 +81,16 @@
             {
                 item.classList.remove("frame-box-frame-show")
             }*/
-            let change = (window.screen.height-item.getBoundingClientRect().y)/window.screen.height*2;
+            let change = ( ( window.screen.height-item.getBoundingClientRect().y ) / window.screen.height )*2;
 
             item.style.opacity = change;
 
-            let frames = document.querySelector("div.frame-box-frame")
+            let frames = item.querySelector("div.frame-box-frame")
             
-            let rotation = change*25;
-            if (rotation > 25)
+            let rotation = change*15;
+            if (rotation > 15)
             {
-                rotation = 25;
+                rotation = 15;
             }
             frames.style.transform = "rotate("+rotation+"deg)";
 
@@ -100,8 +100,9 @@
     })
 })();
 
-function toggle_visibility(openClose) {
+function toggle_visibility(openClose, changeText) {
     let e = document.querySelector(openClose);
+    let c = document.querySelector(changeText);
     if(e.style.display == 'block')
        e.style.display = 'none';
     else
