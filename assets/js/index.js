@@ -8,7 +8,6 @@
      "<div class = \"frame-box-infoNarrow\"><img src=\"assets/img/exmilitary.jpg\" alt=\"Death grips album art exmilitary\"></div>", 
         ]
 
-
     let bodyLoop = document.querySelectorAll(".body-repeat");
 
     let frameSvg = await fetch("img/frame.svg") ;
@@ -17,10 +16,10 @@
     let listJson = await fetch("js/framebox-list.json");
     let listbox = await listJson.json();
 
-    let colorsBot = await fetch("http://api.noopschallenge.com/hexbot?count=" + listbox.length);
+    let colorsBot = await fetch("http://api.noopschallenge.com/hexbot?count=" + listbox.length + "&seed=FF0000,001FFF");
     let colors = await colorsBot.json();
 
-    //style.fill = colors.colors[i].value make this a function or something
+    //let fill = colors.colors[i].value;
 
     listbox.forEach((item,i) =>{
         let outertop = bodyLoop[i].querySelector(".frame-box-infoTop");
@@ -66,12 +65,34 @@
     
         linktext.textContent = item.link_text;
     
-        console.log(img);
-        console.log(item.picture);
-        console.log(item.main);
-        console.log(item.smalldetail);
-        console.log(item.bottom_info);
-        console.log(item.link_url);
-        console.log(item.link_text);
+    })
+
+    let frames = document.querySelectorAll("div.frame-box-frame")
+    let fadeBox = document.querySelectorAll("div.frame-box-infoTop");
+    //infoTop
+    
+
+    document.addEventListener("scroll",e =>{
+        frames.forEach(item =>{
+            /*if (item.getBoundingClientRect().y <  window.screen.height/2)
+            {
+                item.classList.add("frame-box-frame-show")
+            }
+            else if(item.getBoundingClientRect().y >  window.screen.height/2)
+            {
+                item.classList.remove("frame-box-frame-show")
+            }*/
+            let change = (window.screen.height-item.getBoundingClientRect().y)/window.screen.height*2;
+
+            //fadeBox.style.opacity = change;
+            item.style.opacity = change;
+            
+            let rotation = change*25;
+            if (rotation > 25)
+            {
+                rotation = 25;
+            }
+            item.style.transform = "rotate("+rotation+"deg)";
+        })
     })
 })();
