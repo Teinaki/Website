@@ -1,3 +1,4 @@
+    @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap');
     * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -37,6 +38,7 @@
     }
     .outer-container{
         margin-bottom: 20rem;
+        margin-top: 20rem;
     }
     .grid-container {
         display: grid;
@@ -118,9 +120,10 @@
     .topbox-itemtop-1{
         max-width: none;
         color: blue;
-        font-size: 76px;
+        font-size: 96px;
         line-height: 1em;
         font-weight: 700;
+        font-family: 'Spacegrotesk',sans-serif;
     }
     .topbox-itemtop-2{
         max-width: 56rem;
@@ -378,7 +381,6 @@
         bottom: auto;
     }
     div.frame-box-frame{
-        opacity: 0;
         transform: rotate(0deg);
         /*transition: all 1s;*/
     }
@@ -563,6 +565,58 @@
     }
     .double-button{
         margin-right: 1rem;
+    }
+    .yellow-squiggle-container {
+        position: relative;
+        background-color: #ffe100;
+    }
+    .yellow-includes {
+        display: flex;
+        align-items: center;
+        line-height: 1;
+    }
+    .yellow-includes-items {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .yellow-includes-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 0 33%;
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+    .squiggle-background-container, .yellow-background {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+    }
+    .yellow-squiggles.yellow-squiggles-top {
+        top: -25px;
+        background-image: url(https://assets.website-files.com/5d5bb19b40c6be7cda82d388/5e8f28dd4bf4e4857d80a72f_BN-Squiggle-Filled-Top.svg);
+    }
+    .yellow-squiggles {
+        position: absolute;
+        bottom: auto;
+        width: 100%;
+        height: 51px;
+        background-size: 125px;
+        background-repeat: repeat-x;
+    }
+    .yellow-squiggles.yellow-squiggles-bottom {
+        bottom: -47px;
+        z-index: 1;
+        background-image: url(https://assets.website-files.com/5d5bb19b40c6be7cda82d388/5e8f28dd4bf4e4857d80a72f_BN-Squiggle-Filled-Top.svg);
+        transform: rotate(180deg);
+    }
+    .yellow-includes-image
+    {
+        width: 50%;
+        margin-top: 30px;
     }
 
 

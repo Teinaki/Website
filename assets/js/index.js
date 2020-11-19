@@ -16,7 +16,7 @@
     let listJson = await fetch("js/framebox-list.json");
     let listbox = await listJson.json();
 
-    let colorsBot = await fetch("http://api.noopschallenge.com/hexbot?count=" + listbox.length + "&seed=FF0000,001FFF");
+    let colorsBot = await fetch("http://api.noopschallenge.com/hexbot?count=" + listbox.length + "&seed=#FF0000,#FFFF00,#0033CC");
     let colors = await colorsBot.json();
 
     //let fill = colors.colors[i].value;
@@ -67,13 +67,12 @@
     
     })
 
-    let frames = document.querySelectorAll("div.frame-box-frame")
     let fadeBox = document.querySelectorAll("div.frame-box-infoTop");
     //infoTop
     
 
     document.addEventListener("scroll",e =>{
-        frames.forEach(item =>{
+        fadeBox.forEach(item =>{
             /*if (item.getBoundingClientRect().y <  window.screen.height/2)
             {
                 item.classList.add("frame-box-frame-show")
@@ -84,15 +83,19 @@
             }*/
             let change = (window.screen.height-item.getBoundingClientRect().y)/window.screen.height*2;
 
-            //fadeBox.style.opacity = change;
             item.style.opacity = change;
+
+            let frames = document.querySelector("div.frame-box-frame")
             
             let rotation = change*25;
             if (rotation > 25)
             {
                 rotation = 25;
             }
-            item.style.transform = "rotate("+rotation+"deg)";
+            frames.style.transform = "rotate("+rotation+"deg)";
+
+            
+            console.log(change);
         })
     })
 })();

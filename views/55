@@ -1,0 +1,13 @@
+<html>
+
+<%- include header.ejs %>
+
+<%- include nav.ejs %>
+
+<content>
+
+</content>
+
+<%- include footer.ejs %>
+
+</html>
