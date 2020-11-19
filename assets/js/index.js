@@ -96,3 +96,11 @@
         })
     })
 })();
+
+function toggle_visibility(openClose) {
+    let e = document.querySelector(openClose);
+    if(e.style.display == 'block')
+       e.style.display = 'none';
+    else
+       e.style.display = 'block';
+ };

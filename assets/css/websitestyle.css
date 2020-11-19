@@ -425,6 +425,9 @@
         width: 33.33333333%;
         min-height: 1px;
     }
+    .process-processes{
+        display: none;
+    }
     .process-process-step-text {
         max-width: 19rem;
     }
