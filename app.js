@@ -18,6 +18,10 @@ app.get('/sales', (req, res) => {
     res.render('sales')
 });
 
+app.get('/js', (req, res) => {
+    res.render('js')
+});
+
 app.get('/img', (req, res) => {
     res.render('img')
 });
