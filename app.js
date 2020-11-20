@@ -14,8 +14,8 @@ app.get('/info', (req, res) => {
     res.render('info')
 });
 
-app.get('/sales', (req, res) => {
-    res.render('sales')
+app.get('/requests', (req, res) => {
+    res.render('requests')
 });
 
 app.get('/js', (req, res) => {
