@@ -8,7 +8,7 @@
     let listJson = await fetch("js/framebox-list.json");
     let listbox = await listJson.json();
 
-    let colorsBot = await fetch("http://api.noopschallenge.com/hexbot?count=" + listbox.length + "&seed=#FF0000,#FFFF00,#CCCC00");
+    let colorsBot = await fetch("https://api.noopschallenge.com/hexbot?count=" + listbox.length + "&seed=#FF0000,#FFFF00,#CCCC00");
     let colors = await colorsBot.json();
 
     console.log(listbox.length);
