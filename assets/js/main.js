@@ -46,12 +46,11 @@
         let main_text = main_container.querySelector(".frame-box-textExplain");
     
         main_text.textContent = item.main;
-        detail_small.textContent = item.smalldetail;
     
         let outerbottom = bodyLoop[i].querySelector(".frame-box-infoBottom");
-        let Highlights = outerbottom.querySelector(".frame-box-smallDetail");
+        //let Highlights = outerbottom.querySelector(".frame-box-smallDetail");
     
-        Highlights.textContent = item.bottom_info;
+        //Highlights.textContent = item.bottom_info;
     
         let lowerbox = outerbottom.querySelector(".frame-box-infoNarrow");
         let linktext = lowerbox.querySelector(".linkylink");
