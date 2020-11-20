@@ -493,7 +493,7 @@
         line-height: 1em;
         font-weight: 500;
     }
-    .process-click-show, .process-click-hide {
+    .process-click-show {
         font-weight: 700;
         text-transform: uppercase;
         border-bottom: 2px dotted blue;

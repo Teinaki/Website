@@ -8,12 +8,14 @@
     let listJson = await fetch("js/framebox-list.json");
     let listbox = await listJson.json();
 
-    let colorsBot = await fetch("http://api.noopschallenge.com/hexbot?count=" + listbox.length + "&seed=#FF0000,#FFFF00,#0033CC");
+    let colorsBot = await fetch("http://api.noopschallenge.com/hexbot?count=" + listbox.length + "&seed=#FF0000,#FFFF00,#CCCC00");
     let colors = await colorsBot.json();
 
-    //let fill = colors.colors[i].value;
+    console.log(listbox.length);
 
     listbox.forEach((item,i) =>{
+        let fill = colors.colors[i].value;
+
         let outertop = bodyLoop[i].querySelector(".frame-box-infoTop");
         let img_container = outertop.querySelector(".frame-box-infoNarrow");
         let img = img_container.querySelector("img");
@@ -26,9 +28,9 @@
         let linkDiv = document.querySelector("#linkbox" + i);
         let mainText = document.querySelector("#text-Colour" + i);
 
-        linkDiv.style.borderColor = colors.colors[i].value;
-        linkDiv.style.color = colors.colors[i].value;
-        mainText.style.color = colors.colors[i].value;
+        linkDiv.style.borderColor = fill;
+        linkDiv.style.color = fill;
+        mainText.style.color = fill;
     
         frameDiv.innerHTML = frame;
         let svg = frameDiv.querySelector("svg");
@@ -36,8 +38,7 @@
         svg.removeAttribute("width");
         svg.removeAttribute("height");
         svg.style.width = "100%";
-        frameDiv.querySelector("g").style.fill = colors.colors[i].value;
-        console.log(frame);
+        frameDiv.querySelector("g").style.fill = fill;
 
 
         let main_container = outertop.querySelector(".frame-box-infoWide");
@@ -87,16 +88,22 @@
             frames.style.transform = "rotate("+rotation+"deg)";
 
             
-            console.log(change);
+            //console.log(change);
         })
     })
 })();
 
-function toggle_visibility(openClose, changeText) {
+function toggle_visibility(openClose, firstHide) {
     let e = document.querySelector(openClose);
-    let c = document.querySelector(changeText);
+    let c = document.querySelector(firstHide);
     if(e.style.display == 'block')
        e.style.display = 'none';
     else
        e.style.display = 'block';
+
+
+    if(c.style.display == 'inline-block' && e.style.display == 'block')
+       c.textContent = 'Hide our 9-step Process';
+    else
+       c.textContent = 'Show our 9-step Process';
  };
