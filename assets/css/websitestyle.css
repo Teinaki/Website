@@ -25,7 +25,6 @@
         font-size: 30px;
         font-weight: 400;
     }
-    }
     img {
         border: 0;
         display: inline-block;
@@ -331,8 +330,6 @@
         padding-bottom: 40px;
         align-items: center;
     }
-    .field-container label{
-    }
     .request-textarea{
         resize: vertical;
         min-height: 12rem;
@@ -373,9 +370,6 @@
     }
     .frame-box-body-image {
         max-width: 6.5rem;
-    }
-    .frame-list{
-        
     }
     .frame-box-list {
         margin-bottom: 1rem;
