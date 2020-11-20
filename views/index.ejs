@@ -8,7 +8,7 @@
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Experimental Music</title>
 </head>
 
 <header>
@@ -17,7 +17,7 @@
 <body>
 
     
-    <div class = "topbox-container">
+    <div class = "topbox-container" id="top">
         <div class = "default-container">
             <div class = "topbox-itemtop-1">Experimental Music. To explore your emotive range.</div>
             <div class = "topbox-itemtop-2">"Experimental music" was a phrase used in the mid-twentieth-century to 
@@ -195,15 +195,14 @@
                     <div class="frame-box-body">
                         <div  class="frame-box-body-point">
                             <div class="flex">
-                                <div class="frame-box-body-text">$</div>
-                                <div class="frame-box-body-text">1,755</div>
+                                <div class="frame-box-body-text">Consistancy</div>
                             </div>
-                            <div class="frame-box-body-minor">Hosting from $225 per year</div>
+                            <div class="frame-box-body-minor">Most consistant catalougue</div>
                         </div>
                         <div class="frame-box-body-line"></div>
                         <div class="">
-                            <div class="frame-box-body-text">5 days</div>
-                            <div class="frame-box-body-minor">From approval of brief to functional page</div>
+                            <div class="frame-box-body-text">Detroit Reborn</div>
+                            <div class="frame-box-body-minor">Detroit Continues to rebuild with stellar artists shining</div>
                         </div>
                         <div class="frame-box-body-line"></div>
                         <div class = "icon-music nav-picture"></div>
@@ -250,15 +249,14 @@
                     <div class="frame-box-body">
                         <div  class="frame-box-body-point">
                             <div class="flex">
-                                <div class="frame-box-body-text">$</div>
-                                <div class="frame-box-body-text">1,755</div>
+                                <div class="frame-box-body-text">NME Awards</div>
                             </div>
-                            <div class="frame-box-body-minor">Hosting from $225 per year</div>
+                            <div class="frame-box-body-minor">Rookie Artist makes a great ambassador</div>
                         </div>
                         <div class="frame-box-body-line"></div>
                         <div class="">
-                            <div class="frame-box-body-text">5 days</div>
-                            <div class="frame-box-body-minor">From approval of brief to functional page</div>
+                            <div class="frame-box-body-text">HUGE Debut</div>
+                            <div class="frame-box-body-minor">1st Album an instant Classic</div>
                         </div>
                         <div class="frame-box-body-line"></div>
                         <div class = "icon-music nav-picture"></div>
@@ -360,7 +358,7 @@
                 </div>
                 <div class ="brief-details">
                     <h2 class ="brief-text">Wait what is the product?</h2>
-                    <a href="/requests" class = "linkylink">Back to the Beginning</a>
+                    <a href="#top" class = "linkylink">Back to the Beginning</a>
                 </div>
             </div>
         </div>
@@ -400,7 +398,31 @@
     <div class = "fine-print-section">
         <div class ="default-container">
             <h2 class="exp-h2">Fineprint</h2>
-            <div class = "process-click-show" style="display: inline-block">Show fineprint</div>
+            <div class = "process-click-show" style="display: inline-block" onclick="toggle_visibility('.fine-items' , null )">Show/Hide fineprint</div>
+            <div class="fine-list">
+                <div style="display: none" class="fine-items">
+                    <div class="fine-item">
+                        <h3 class="fine-title">Built using SQL</h3>
+                        <p class="bn-body-text">A platform we found to serve our clients perfectly. Outperforming everything in speed, efficiency, and ease of use.</p>
+                    </div>
+                    <div class="fine-item">
+                        <h3 class="fine-title">Content to be provided</h3>
+                        <p class="bn-body-text">We are not professional copywriters and request that the client supplies us with content. Alternatively, we can suggest a copywriter for us to work with in preparing the content for your database.</p>
+                    </div>
+                    <div class="fine-item">
+                        <h3 class="fine-title">Documentation</h3>
+                        <p class="bn-body-text">We provide you with all the documentation needed to work with SQL and your new database.</p>
+                    </div>
+                    <div class="fine-item">
+                        <h3 class="fine-title">Support</h3>
+                        <p class="bn-body-text">We make sure you have an understanding of how to use the system and support you through the process.</p>
+                    </div>
+                    <div class="fine-item">
+                        <h3 class="fine-title">Split payment</h3>
+                        <p class="finetext">We split the payments into two to make it easier for you. With 50% as deposit before the works start, and the other 50% after launch.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -414,10 +436,10 @@
                     new songs and pieces and organising live concerts and shows, audio and video recordings, compositions and sheet music, 
                     and the organizations and associations that aid and represent music creators.</p>
             <div class = "double-button-container">
-                <h2 class = "double-button-title">Something at the bottom to click on</h2>
+                <h2 class = "double-button-title">Click to Experience Experimental Music</h2>
                 <div class = "double-buttons">
-                    <a href="/requests" class = "linkylink double-button">Click me Please</a>
-                    <a href="/requests" class = "linkylink double-button">Click me Please</a>
+                    <a href="#top" class = "linkylink double-button">To the Top</a>
+                    <a href="/requests" class = "linkylink double-button">Submit a Request</a>
                 </div>
             </div>
         </div>

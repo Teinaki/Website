@@ -133,7 +133,7 @@
         font-size: 96px;
         line-height: 1em;
         font-weight: 700;
-        font-family: 'Spacegrotesk',sans-serif;
+        font-family: 'Space grotesk';
     }
     .topbox-itemtop-2{
         max-width: 56rem;
@@ -571,6 +571,25 @@
     }
     .double-button{
         margin-right: 1rem;
+    }
+    .fine-text{
+        font-family: 'Space grotesk';
+        font-size: 32px;
+        line-height: 1.5em;
+    }
+    .fine-title{
+        margin-top: 0;
+        color: Blue;
+        font-size: 72px;
+        line-height: 1em;
+        font-weight: 500;
+    }
+    .fine-items{
+        max-width: 56rem;
+        margin-top: 5rem;
+    }
+    .fine-item{
+        margin-bottom: 5rem;
     }
     .yellow-squiggle-container {
         position: relative;
