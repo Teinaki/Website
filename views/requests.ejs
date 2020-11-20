@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+                        <!--Basic 2nd page mimicing the reference website, just a form and submit.-->
+<head>
+    <link rel="stylesheet" href="css/websitestyle.css">
+    <link rel="stylesheet" href="vendor/fontello-00cf3757/css/fontello.css">
+    <style>
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<header>
+    <%- include('nav.ejs') %>
+</header>
+    <body>
+        <div class="request-container">
+                <div class ="request-header">
+                    <div class="title-container">
+                        <img src="img/frame.svg" alt="" class="request-title-frame"></img>
+                        <h1 class="request-title">Need Details</h1>
+                    </div>
+                    <div class="request-includes">
+                        <div class="request-subheading">Includes:</div>
+                        <h2 class="request-text-item">Detailed History</h2>
+                        <h2 class="request-text-item">Accolades</h2>
+                        <h2 class="request-text-item">Sales Figures</h2>
+                        <h2 class="request-text-item">Equipment Used</h2>
+                        <h2 class="request-text-item">Collaborators</h2>
+                        <h2 class="request-text-item">Producers</h2>
+                        <h2 class="request-text-item">& More...</h2>
+                    </div>
+                </div>
+        
+        
+            <div class="request-form-container request-form">
+                <form name="form-request" data-name="" class="request-form"> 
+                    <div class="field-container label">
+                        <label for="name" class="request-form-label">Name</label>
+                        <div class="request-field">
+                            <input type="text" class="request-input" maxlength="256" name="name" data-name="Name" hidefs="true" id="name" required="">
+                        </div>
+                    </div>
+                    <div class="field-container label">
+                        <label for="" class="request-form-label">Email</label>
+                        <div class="request-field">
+                            <input type="email" class="request-input" maxlength="256" name="Email" data-name="Email" hidefs="true" id="Email" required="">
+                        </div>
+                    </div>
+                    <div class="field-container label">
+                        <label for="" class="request-form-label">Use</label>
+                        <div class="request-field">
+                            <input type="text" maxlength="256" name="URL" data-name="URL" id="URL" hidefs="true" class="request-input">
+                            <div class="request-field-note">What our information will be used for.</div>
+                        </div>
+                    </div>
+                    <div class="field-container label">
+                        <label for="" class="request-form-label">Tell us why.</label>
+                        <div class="request-field">
+                            <textarea data-name="Comments" maxlength="5000" id="comments" name="comments" required="" hidefs="true" class="request-textarea"></textarea>
+                            <div class="request-field-note">Why do you need our sourced data?</div>
+                        </div>
+                    </div>
+                    <div class="request-form">
+                        <div class ="request-submit">
+                            <a href="" class = "linkylink" onClick="window.location.reload()">Submit Request</a> 
+                            <!--Don't actually use this data so I just reload the page-->
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </body>
+    <footer>
+        <%- include('footer.ejs') %>
+    </footer>
+</html>

@@ -1,4 +1,5 @@
-(async () => { //async because we need things to happen in order. example, need the colour before we put frame into the document.
+(async () => { 
+    //async because we need things to happen in order. example, need the colour before we put frame into the document.
 
     let bodyLoop = document.querySelectorAll(".body-repeat");
 
@@ -52,7 +53,7 @@
     
         linktext.textContent = item.link_text;
     
-    }) //loop for getting our json data into the right classes in the html, would expand with the rest of data in html if there was time.
+    }); //loop for getting our json data into the right classes in the html, would expand with the rest of data in html if there was time.
 
     let fadeBox = document.querySelectorAll("div.frame-box-infoTop"); //the part of the box we want to fade.
     
@@ -71,8 +72,8 @@
                 rotation = 15;
             }
             frames.style.transform = "rotate("+rotation+"deg)"; //just rotate the frame.
-        })
-    })
+        });
+    });
 })();
 
 function toggle_visibility(openClose, firstHide) {
