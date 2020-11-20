@@ -1,17 +1,15 @@
-(async () => {
+(async () => { //async because we need things to happen in order. example, need the colour before we put frame into the document.
 
     let bodyLoop = document.querySelectorAll(".body-repeat");
 
-    let frameSvg = await fetch("img/frame.svg") ;
+    let frameSvg = await fetch("img/frame.svg") ; //svg image so we can change the colour
     let frame = await frameSvg.text();
 
     let listJson = await fetch("js/framebox-list.json");
     let listbox = await listJson.json();
 
-    let colorsBot = await fetch("https://api.noopschallenge.com/hexbot?count=" + listbox.length + "&seed=#FF0000,#FFFF00,#CCCC00");
+    let colorsBot = await fetch("https://api.noopschallenge.com/hexbot?count=" + listbox.length + "&seed=#FF0000,#FFFF00,#CCCC00");//fetch random colours for our framebox design
     let colors = await colorsBot.json();
-
-    console.log(listbox.length);
 
     listbox.forEach((item,i) =>{
         let fill = colors.colors[i].value;
@@ -48,46 +46,31 @@
         main_text.textContent = item.main;
     
         let outerbottom = bodyLoop[i].querySelector(".frame-box-infoBottom");
-        //let Highlights = outerbottom.querySelector(".frame-box-smallDetail");
-    
-        //Highlights.textContent = item.bottom_info;
     
         let lowerbox = outerbottom.querySelector(".frame-box-infoNarrow");
         let linktext = lowerbox.querySelector(".linkylink");
     
         linktext.textContent = item.link_text;
     
-    })
+    }) //loop for getting our json data into the right classes in the html, would expand with the rest of data in html if there was time.
 
-    let fadeBox = document.querySelectorAll("div.frame-box-infoTop");
-    //infoTop
+    let fadeBox = document.querySelectorAll("div.frame-box-infoTop"); //the part of the box we want to fade.
     
 
     document.addEventListener("scroll",e =>{
         fadeBox.forEach(item =>{
-            /*if (item.getBoundingClientRect().y <  window.screen.height/2)
-            {
-                item.classList.add("frame-box-frame-show")
-            }
-            else if(item.getBoundingClientRect().y >  window.screen.height/2)
-            {
-                item.classList.remove("frame-box-frame-show")
-            }*/
             let change = ( ( window.screen.height-item.getBoundingClientRect().y ) / window.screen.height )*2;
 
-            item.style.opacity = change;
+            item.style.opacity = change; //change opacity of upper part of the box.
 
-            let frames = item.querySelector("div.frame-box-frame")
+            let frames = item.querySelector("div.frame-box-frame") 
             
             let rotation = change*15;
             if (rotation > 15)
             {
                 rotation = 15;
             }
-            frames.style.transform = "rotate("+rotation+"deg)";
-
-            
-            //console.log(change);
+            frames.style.transform = "rotate("+rotation+"deg)"; //just rotate the frame.
         })
     })
 })();
@@ -95,13 +78,13 @@
 function toggle_visibility(openClose, firstHide) {
     let e = document.querySelector(openClose);
     let c = document.querySelector(firstHide);
-    if(e.style.display == 'block')
+    if(e.style.display == 'block') //toggle between being block & no displays.
        e.style.display = 'none';
     else
        e.style.display = 'block';
 
 
-    if(c.style.display == 'inline-block' && e.style.display == 'block')
+    if(c.style.display == 'inline-block' && e.style.display == 'block') //work around to change text, style.display doesn't matter
        c.textContent = 'Hide our 9-step Process';
     else
        c.textContent = 'Show our 9-step Process';

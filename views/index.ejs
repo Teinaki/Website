@@ -17,7 +17,7 @@
 <body>
 
     
-    <div class = "topbox-container" id="top">
+    <div class = "topbox-container" id="top"> <!--First Section that was made so it could be improved a lot-->
         <div class = "default-container">
             <div class = "topbox-itemtop-1">Experimental Music. To explore your emotive range.</div>
             <div class = "topbox-itemtop-2">"Experimental music" was a phrase used in the mid-twentieth-century to 
@@ -26,8 +26,8 @@
         </div>
     </div>
 
-    <div class ="why-section">
-        <div class ="default-container">
+    <div class ="why-section"> <!--Very Basic Section on why the concept of the website is a thing-->
+        <div class ="default-container"> <!--Theme of the website doesn't matter to me, more a reference for the structure of the website rather than content-->
             <h2 class="exp-h2">Why?</h2>
             <p>This website represents a database that attempts to make a detailed repository of a magnitude of details about 
                 experimental music. Experimental music is often overlooked as crazy, noisy and exhausting with artists often garnering a cult following
@@ -36,31 +36,34 @@
             </p>
         </div>
     </div>
-    <div class = "outer-container">
-        <div class = " list-num-head">We promise</div>
-            <div class = "list-num-container">
-                <div class = "list-point">
-                    <img src="img/028-1.svg" alt="" class="list-num-img">
-                    <div class = "list-num-text">Reference to a briliant Artist</div>
-                </div>
-                <div class = "list-point">
-                    <img src="img/029-2.svg" alt="" class="list-num-img">
-                    <div class = "list-num-text">We won’t outsource anything. Everything is researched and investigated in-house.</div>
-                </div>
-                <div class = "list-point">
-                    <img src="img/030-3.svg" alt="" class="list-num-img">
-                    <div class = "list-num-text">Your information will be for you and your audience not us and our “hipster” egos. </div>
-                </div>
-                <div class = "list-point">
-                    <img src="img/031-4.svg" alt="" class="list-num-img">
-                    <div class = "list-num-text">We will deliver information that correctly responds to the brief we wrote together with you.</div>
-                </div>
+
+    <div class ="Promise-Section"> <!--A bit of a different layout, says what the promise of the website/database is-->
+        <div class = "outer-container">
+            <div class = " list-num-head">We promise</div>
+                <div class = "list-num-container">
+                    <div class = "list-point">
+                        <img src="img/028-1.svg" alt="" class="list-num-img"> <!--Icons made by https://www.flaticon.com/authors/freepik" from https://www.flaticon.com/" -->
+                        <div class = "list-num-text">Reference to a briliant Artist</div>
+                    </div>
+                    <div class = "list-point">
+                        <img src="img/029-2.svg" alt="" class="list-num-img"><!--Icons made by https://www.flaticon.com/authors/freepik" from https://www.flaticon.com/" -->
+                        <div class = "list-num-text">We won’t outsource anything. Everything is researched and investigated in-house.</div>
+                    </div>
+                    <div class = "list-point">
+                        <img src="img/030-3.svg" alt="" class="list-num-img"><!--Icons made by https://www.flaticon.com/authors/freepik" from https://www.flaticon.com/" -->
+                        <div class = "list-num-text">Your information will be for you and your audience not us and our “hipster” egos. </div>
+                    </div>
+                    <div class = "list-point">
+                        <img src="img/031-4.svg" alt="" class="list-num-img"><!--Icons made by https://www.flaticon.com/authors/freepik" from https://www.flaticon.com/" -->
+                        <div class = "list-num-text">We will deliver information that correctly responds to the brief we wrote together with you.</div>
+                    </div>
+            </div>
         </div>
     </div>
 
 
-    <div class = '' id ="Albums">
-        <div class ="default-container Albums-blurb">
+    <div class = 'Albums-Section' id ="Albums">  <!--Largest part of the website, needed to be expanded in json before time ran out-->
+        <div class ="default-container Albums-blurb"> <!--Small description/blurb of why the different albums exist-->
             <p>We've found that most of the Experimental music fans can fit neatly into different categories.
                  To make it easy we've developed Four Artistic references.
                  Each artist fit for a different purpose and ending with a specific result. If one is interested in these artists the 
@@ -68,21 +71,22 @@
         </div>
 
 
-        <div class="squiggles"></div>
+        <div class="squiggles"></div> <!--Cool seperator to break the monotony of the website, img from wearegoat.com-->
 
 
-        <div class = "outer-container body-repeat">
+        <div class = "outer-container body-repeat"> <!--One of many repeated sections-->
             <div class="frame-box-infoTop">
 
                 <div class = "frame-box-infoNarrow">
-                    <img src="" alt="" >
-                    <div id="frame0" class="frame-box-frame"></div>
+                    <img src="" alt="" > <!--Alot of data is passed through js/json, would ideally be everything in the repeated section-->
+                    <!--This img is the Album Cover-->
+                    <div id="frame0" class="frame-box-frame"></div> <!--Frame Svg is passed into here with colour from api-->
                     
                     <img src="img/thick-squiggle.png" alt="" class="small-squiggle">
                     <h1 class="frame-bulletpoint">Death Grips Exmilitary<br>Noise Rap</h1>
                 </div>
                 <div class = "frame-box-infoWide">
-                    <div class = "frame-box-textExplain" id="text-Colour0">
+                    <div class = "frame-box-textExplain" id="text-Colour0"> <!--This text colour matches the frame, from the api-->
                         
                     </div>
                     <div class="frame-box-body">
@@ -118,13 +122,13 @@
                         <p class="frame-box-list-point">Mind bending lyrics<br></p>
                     </div>
                 </div>
-                <div class = "frame-box-infoNarrow"><a href="/requests" class = "linkylink frame-box-info" id="linkbox0" ></a></div>
+                <div class = "frame-box-infoNarrow"><a href="/requests" class = "linkylink frame-box-info" id="linkbox0" ></a></div> <!--This frame gets its text from json and colour from api to match text, frame-->
             </div>
         </div>
 
-        <%- include('yellow-squiggles.ejs') %>
+        <%- include('yellow-squiggles.ejs') %> <!--Our large Yellow-squiggle section that breaks up the website a little, gives a bit of details on what experimental music is about-->
 
-        <div class = "outer-container body-repeat">
+        <div class = "outer-container body-repeat"> <!--Another Repeated section, much the same as the others but new album/artist-->
             <div class="frame-box-infoTop">
 
                 <div class = "frame-box-infoNarrow">
@@ -178,7 +182,7 @@
         <%- include('yellow-squiggles.ejs') %>
 
 
-        <div class = "outer-container body-repeat">
+        <div class = "outer-container body-repeat"> <!--Another Repeated section, much the same as the others but new album/artist-->
             <div class="frame-box-infoTop">
 
                 <div class = "frame-box-infoNarrow">
@@ -232,7 +236,7 @@
         <%- include('yellow-squiggles.ejs') %>
 
 
-        <div class = "outer-container body-repeat">
+        <div class = "outer-container body-repeat"> <!--Another Repeated section, much the same as the others but new album/artist-->
             <div class="frame-box-infoTop">
 
                 <div class = "frame-box-infoNarrow">
@@ -284,7 +288,7 @@
         </div>
     </div>
 
-    <div class = "process-section">
+    <div class = "process-section"> <!--New Section to represent the process of the website/database-->
         <div class = "process-container">
             <h2 class = "exp-h2">Our Process</h2>
             <h3 class = "exp-h3">
@@ -294,62 +298,63 @@
         </div>
         <div class = "process-container">
             <div class = "process-click">
+                <!--This click event uses a js function to toggle visibility and change its own text-->
                 <div class = "process-click-show" style="display: inline-block" onclick="toggle_visibility('.process-processes' , '.process-click-show' )">Show our 9-step Process</div>
             </div>
             <div class="process-processes">
                 <div class="process-process-container drop-list-list">
-                    <div class="process-process-steps drop-list-items">
+                    <div class="process-process-steps drop-list-items"> <!--Makes a cool 3 wide grid with images behind to show the different processes-->
                         <div class="process-process-step drop-list-item">
                             <p class="process-process-step-text">Select an option from above and answer the questions on the online form</p>
-                            <img src="img/028-1.svg" alt="" class="process-process-step-image">
+                            <img src="img/028-1.svg" alt="" class="process-process-step-image"> <!--Icons made by https://www.flaticon.com/authors/freepik" from https://www.flaticon.com/" -->
                         </div>
                         <div class="process-process-step drop-list-item">
                             <p class="process-process-step-text">We respond with additional questions to help us understand your goals</p>
-                            <img src="img/029-2.svg" alt="" class="process-process-step-image">
+                            <img src="img/029-2.svg" alt="" class="process-process-step-image"><!--Icons made by https://www.flaticon.com/authors/freepik" from https://www.flaticon.com/" -->
                         </div>
                         <div class="process-process-step drop-list-item">
                             <p class="process-process-step-text">We finalise the brief together and agree on a schedule</p>
-                            <img src="img/030-3.svg" alt="" class="process-process-step-image">
+                            <img src="img/030-3.svg" alt="" class="process-process-step-image"><!--Icons made by https://www.flaticon.com/authors/freepik" from https://www.flaticon.com/" -->
                         </div>
                         <div class="process-process-step drop-list-item">
                             <p class="process-process-step-text">You pay the deposit and send over any available content and assets</p>
-                            <img src="img/031-4.svg" alt="" class="process-process-step-image">
+                            <img src="img/031-4.svg" alt="" class="process-process-step-image"><!--Icons made by https://www.flaticon.com/authors/freepik" from https://www.flaticon.com/" -->
                         </div>
                         <div class="process-process-step drop-list-item">
                             <p class="process-process-step-text">We prepare the mockup and get your approval</p>
-                            <img src="img/032-5.svg" alt="" class="process-process-step-image">
+                            <img src="img/032-5.svg" alt="" class="process-process-step-image"><!--Icons made by https://www.flaticon.com/authors/freepik" from https://www.flaticon.com/" -->
                         </div>
                         <div class="process-process-step drop-list-item">
                             <p class="process-process-step-text">We build the database and give you access</p>
-                            <img src="img/033-6.svg" alt="" class="process-process-step-image">
+                            <img src="img/033-6.svg" alt="" class="process-process-step-image"><!--Icons made by https://www.flaticon.com/authors/freepik" from https://www.flaticon.com/" -->
                         </div>
                         <div class="process-process-step drop-list-item">
                             <p class="process-process-step-text">We provide you with documentation and instructions for your new data</p>
-                            <img src="img/034-7.svg" alt="" class="process-process-step-image">
+                            <img src="img/034-7.svg" alt="" class="process-process-step-image"><!--Icons made by https://www.flaticon.com/authors/freepik" from https://www.flaticon.com/" -->
                         </div>
                         <div class="process-process-step drop-list-item">
                             <p class="process-process-step-text">The database is tested by yourselves and us</p>
-                            <img src="img/035-8.svg" alt="" class="process-process-step-image">
+                            <img src="img/035-8.svg" alt="" class="process-process-step-image"><!--Icons made by https://www.flaticon.com/authors/freepik" from https://www.flaticon.com/" -->
                         </div>
                         <div class="process-process-step drop-list-item">
                             <p class="process-process-step-text">We launch the database on your domain and you settle the final payment</p>
-                            <img src="img/036-9.svg" alt="" class="process-process-step-image">
+                            <img src="img/036-9.svg" alt="" class="process-process-step-image"><!--Icons made by https://www.flaticon.com/authors/freepik" from https://www.flaticon.com/" -->
                         </div>
                     </div>
                 </div>
-                <div class="process-process-final-step">
+                <div class="process-process-final-step"> <!--Not too unique of an item, just stretches further that the other items-->
                     <p class="process-process-final-step-text">Don't worry, we don't leave you to tackle your new digital tool alone. We continue supporting you for a time after launch.</p>
-                    <img src="img/music.svg" alt="" class="process-process-step-image">
+                    <img src="img/music.svg" alt="" class="process-process-step-image"><!--Icons made by https://www.flaticon.com/authors/freepik" from https://www.flaticon.com/" -->
                 </div>
             </div>
         </div>
         
+
+        <div  class="squiggles"> </div>
     </div>
 
-    <div  class="squiggles"> </div>
 
-
-    <div class="brief-section"> 
+    <div class="brief-section"> <!--very small section that just has small details-->
         <div class = "brief-container">
             <div class="brief-frame-box">
                 <div class="brief-frame-title">
@@ -357,17 +362,18 @@
                     <img src="img/frame.png" class="frame-box-frame brief-frame-frame"></img>
                 </div>
                 <div class ="brief-details">
-                    <h2 class ="brief-text">Wait what is the product?</h2>
-                    <a href="#top" class = "linkylink">Back to the Beginning</a>
+                    <h2 class ="brief-text">Wait what is the product?</h2> 
+                    <a href="#top" class = "linkylink">Back to the Beginning</a> <!--href to the top id near the top of the page-->
                 </div>
             </div>
         </div>
+
+        <div  class="squiggles"> </div>
     </div>
 
 
-    <div  class="squiggles"> </div>
 
-    <div class ="recommend-section">
+    <div class ="recommend-section"> <!--Shows how recommened experimental music is in this section-->
         <div class ="default-container">
             <h2 class="exp-h2">Who Recommends</h2>
 		    <h3 class="exp-h3">These are just a few highly rated reviews for experimental albums.</h3>
@@ -384,21 +390,22 @@
 					<div class=""><a href="https://www.metacritic.com/music/the-money-store/death-grips" class="recommend-link">Death Grips</a></div>
 					
 					<div class=""><a href="https://www.theguardian.com/music/2019/dec/13/fank-zappa-hot-rats-album-music-anniversary" class="recommend-link">frank zappa</a></div>
-					
+					<!--Tried to provide a variety of websites but they were hard to find-->
 					<div class=""><a href="https://pitchfork.com/reviews/albums/5579-madvillainy/" class="recommend-link">Madvillain</a></div>
 					
 					<div class=""><a href="https://pitchfork.com/reviews/albums/slowthai-nothing-great-about-britain/" class="recommend-link">Slowthai</a></div>
 				</div>
 			</div>
         </div>
+        <div  class="squiggles"> </div>
     </div>
 
-    <div  class="squiggles"> </div>
 
-    <div class = "fine-print-section">
+    <div class = "fine-print-section"> <!--New Section for the fineprint of the database-->
         <div class ="default-container">
-            <h2 class="exp-h2">Fineprint</h2>
+            <h2 class="exp-h2">Fineprint</h2> <!--naming conventions for the website are experimental, intentional for the theme-->
             <div class = "process-click-show" style="display: inline-block" onclick="toggle_visibility('.fine-items' , null )">Show/Hide fineprint</div>
+            <!--Another toggle onclick, this time I don't want to change text as it works differently from the last click and I don't want to rewrite/create new function-->
             <div class="fine-list">
                 <div style="display: none" class="fine-items">
                     <div class="fine-item">
@@ -409,7 +416,7 @@
                         <h3 class="fine-title">Content to be provided</h3>
                         <p class="bn-body-text">We are not professional copywriters and request that the client supplies us with content. Alternatively, we can suggest a copywriter for us to work with in preparing the content for your database.</p>
                     </div>
-                    <div class="fine-item">
+                    <div class="fine-item"><!--Very Simple divs as nothing complex is needed-->
                         <h3 class="fine-title">Documentation</h3>
                         <p class="bn-body-text">We provide you with all the documentation needed to work with SQL and your new database.</p>
                     </div>
@@ -424,34 +431,34 @@
                 </div>
             </div>
         </div>
+        <div  class="squiggles"> </div>
     </div>
 
-    <div  class="squiggles"> </div>
 
-    <div class = "confused-section">
+    <div class = "confused-section"><!--Confused section to hopefully clarify what the website is for-->
         <div class ="default-container">
             <h2 class="exp-h2">Confused?</h2>
             <h3 class="exp-h3">Good, the most important aspect of art is to invoke emotion, experimental music does that to the utmost degree.</h3>
             <p>Experimental Music. To explore your emotive range The music industry consists of the companies and independent artists that earn money by creating 
                     new songs and pieces and organising live concerts and shows, audio and video recordings, compositions and sheet music, 
-                    and the organizations and associations that aid and represent music creators.</p>
+                    and the organizations and associations that aid and represent music creators.</p> 
+                    <!--This Clarifies nothing-->
             <div class = "double-button-container">
-                <h2 class = "double-button-title">Click to Experience Experimental Music</h2>
+                <h2 class = "double-button-title">Click to Experience Experimental Music</h2> 
                 <div class = "double-buttons">
                     <a href="#top" class = "linkylink double-button">To the Top</a>
-                    <a href="/requests" class = "linkylink double-button">Submit a Request</a>
+                    <a href="/requests" class = "linkylink double-button">Submit a Request</a> <!--Not many options for href, multiple different /requests forms would be a good next step-->
                 </div>
             </div>
         </div>
+        <div  class="squiggles"> </div>
     </div>
 
-    <div  class="squiggles"> </div>
 
-
-    <script src="js/main.js"></script>
+    <script src="js/main.js"></script> <!--Our js script, used less often than I would ideally want but it shows how I would further implement the same things, like queryselection of a class then passing our json data into it-->
 
 </body>
 <footer>
-    <%- include('footer.ejs') %>
+    <%- include('footer.ejs') %> <!--Footer ejs since its repeated I thought I would just save on code, also make it standard on all pages-->
 </footer>
 </html>

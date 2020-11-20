@@ -1,3 +1,6 @@
+    /*This Style sheet is the messiest part of the website, some classes styles are doubled up, some are declared but never used in the form
+        if I had time I would clean this up and add more smaller screen compaibility with @media screen*/
+    /*Some Liberties were taken with styles as I thought the reference website did too much or too little in areas*/
     @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap');
     * {
     -webkit-box-sizing: border-box;
